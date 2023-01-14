@@ -18,7 +18,9 @@ public class GitTest {
     @Test
     public void testForGit() {
         Selenide.open("https://www.avito.ru/");
-        $(".top-rubricator-rubricatorButton-SoKyQ").click();
         sleep(4000);
+        $(".top-rubricator-rubricatorButton-SoKyQ").click();
+        sleep(2000);
+        $("[data-marker = 'top-rubricator/root-category-26195']").hover();
     }
 }
